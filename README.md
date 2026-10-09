@@ -1,28 +1,31 @@
-# 论文陪读教练 / Paper Learning Companion
+# Paper Learning Companion
 
-面向零基础读者的 Codex 论文阅读 skill。它将论文陪读组织为“先建全局地图、再按卡点深入”的学习过程，并把论文事实、背景知识与教学推断分开。
+A Codex skill for readers who need a reliable, beginner-friendly path through research papers. It starts with a paper-specific map, then deepens only where the reader needs it while separating paper evidence from teaching context and inference.
 
-## 能做什么
+## Capabilities
 
-- 用中文建立论文的研究问题、方法主线、实验证据和局限；
-- 对公式、图表、机制提供由浅入深的局部拆解；
-- 根据需要生成概念图、可编辑图设计、学习笔记与动态机制演示；
-- 动画优先使用具体玩具场景，不将联合优化误画为物理拉拽；图内只保留标明为示例的少量数值，公式放在配套讲解中。
+- Builds a structured reading map of the research question, method path, evidence, and limitations.
+- Explains concepts, equations, figures, and mechanisms from intuition to paper-specific meaning.
+- Reviews experimental evidence and the boundary of claimed conclusions.
+- Produces learning notes, concept diagrams, editable figure specifications, and dynamic mechanism demonstrations when they materially improve understanding.
+- Uses concrete toy scenes for animations; equations stay in the accompanying explanation, while the scene shows only a few clearly marked teaching values.
 
-## 安装
+## Installation
 
-将整个目录复制到 Codex skills 目录：
+Clone the repository into the Codex skills directory:
 
 ```powershell
 git clone https://github.com/Speraymer/paper-learning-companion "$env:USERPROFILE\.codex\skills\paper-learning-companion"
 ```
 
-重启或刷新 Codex 后，上传论文并直接说“带我读这篇论文”即可。
+Restart or refresh Codex, upload a paper, and ask to read it together.
 
-## 设计边界
+## Boundaries
 
-本 skill 不替代论文原文核查：关键结论应回溯到页码、图表、公式或附录。外部检索材料和教学示意会与论文实证结果明确区分。
+This skill does not replace source verification. Important conclusions should trace back to a page, figure, table, equation, or appendix. External material and teaching visuals are explicitly separated from the paper's empirical evidence.
 
 ## License
 
 [MIT](LICENSE)
+
+<!-- 中文注释：这是一个面向论文阅读的 Codex 技能。它先建立研究问题、方法和证据的全局地图，再按读者需要解释概念、公式、图表与实验；可按需生成笔记、图和动画，但关键结论仍需回查论文原文。 -->

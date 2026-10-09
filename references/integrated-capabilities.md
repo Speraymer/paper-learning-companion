@@ -1,55 +1,34 @@
-# 内置能力模块
+# Integrated Capabilities
 
-这些模块属于 `paper-learning-companion` 本身。它们不调用或要求另一个已安装的 skill；包被复制到新环境后，仍能完成文字、结构化笔记、概念图和学习对话。
+These modules belong to `paper-learning-companion`; they do not require another installed skill after the package is copied to a new environment.
 
-## 1. 阅读图谱
+## Reading map
 
-当用户上传论文、要求精读、需要方法图或论文整体很复杂时自动使用。先以摘要、引言、总览图、结论和关键实验建立暂定地图，再读方法、图表、附录和定义来校正它。交付按读者理解顺序组织：
+For a complex paper or deep-reading request, build a provisional map from the abstract, introduction, overview figure, conclusion, and key experiments, then correct it with methods, tables, appendices, and definitions. Cover prior limitation, method path, contribution-driving mechanism, experiment map, and synthesis. For a requested saved artifact, prefer one self-contained HTML or PDF plus a readable Markdown audit trail.
 
-1. 问题、研究场景、已有方案的结构性不足；
-2. 方法主路径：输入、转换、决策、输出和反馈；
-3. 核心机制：只放大决定贡献的少数公式、模块或假设；
-4. 实验地图：每一主张对应的设置、基线、指标、观察结果和可支持的结论；
-5. 综合：机制为什么可能有效、证据覆盖范围以及仍不确定之处。
+## Deep explanation and academic transfer
 
-当用户明确要可保存的完整阅读件时，优先生成单个自包含 HTML 或 PDF，并保留可读的 Markdown 审计稿。材料不完整时，不承诺“完整精读”。
+For a concept, equation, figure, or section, follow the paper's argument: what it establishes, its objects/assumptions/symbols, and its connection to neighboring passages. Keep only essential equations and define variables, units/conditions, loss terms, and constraints. For reviews, writing, comparison, or planning, start from problem–gap–method–evidence–contribution–limitation and keep facts, inferences, and recommendations separate.
 
-## 2. 中文精读与公式讲解
+## Research workbench and editable figure design
 
-当用户问“这是什么”“为什么有效”“公式怎么来”或指向某一节、图、表时自动使用。遵循论文自己的论证顺序，而不是把一切硬塞进固定模板。
+For code, data, simulation, statistics, plots, units, citations, or reproduction, validate source, dimensions, units, randomness, environment, expected output, and output readability. For architecture or process figures, first state the single question the figure answers, then specify hierarchy, labels, arrows, color semantics, legend, and size. Prefer editable native shapes, text, and connectors. If Visio is available and required, produce `.vsdx`; otherwise provide Mermaid, SVG, or a layout specification.
 
-- 先说该段试图建立什么；再说它引入了哪些对象、假设与符号；最后说明它怎样承接上一段、为下一段铺路。
-- 公式只保留理解机制必需的部分。定义变量、单位/条件、损失项或分母，并给出一个最小具体例子；不要把公式渲染成代码文本。
-- 每个主实验都说清：问题、数据/设定、基线或对照、指标、关键观察、它支持什么、它不能证明什么。
-- 若提取质量不佳、论文未给细节或图像模糊，标记不确定性，不补造数字。
+## Read-aloud diagnosis
 
-## 3. 学术迁移
+When the reader is vague, voice interaction is available, or a concept repeatedly blocks progress, address one smallest concept per turn: plain sentence, brief analogy, exact paper mapping, then a one-sentence restatement or choice. Change the example or return to a prerequisite when needed.
 
-当用户想写综述、构思课题、写论文段落、比较工作或准备复现计划时自动使用。先组织“问题—缺口—方法—证据—贡献—局限”的论证提纲，再按目标交付正文、综述对比、研究问题或复现实验计划。
+## Dynamic mechanism demonstration
 
-保持四类信息分开：论文或数据直接事实、用户已经确认的信息、基于上下文的推断、建议性扩展。不要编造 DOI、数据、实验条件、作者结论或性能数字。
+When static media cannot show state change, data flow, gradient feedback, iterative correction, or cross-module interaction, use a minimal concrete toy scene rather than animated block-diagram arrows. Label the boundary between teaching simulation and paper measurement.
 
-## 4. 科研工作台
+Every causal step must map to a paper variable, observation, equation, or algorithmic operation. Never depict joint optimization as an unsupported physical pull or direct causal force. Put equations in the accompanying explanation, not across the visual. The visual may include only a few clearly marked teaching values (such as distance, offset, or error), never as measured paper values. State retained variables and omitted conditions. Provide readable first-frame content, start/pause/replay, static step switching for reduced-motion preferences, explicit labels, and non-color-only encoding. When users request saving, linking, or downloading, export a standalone HTML file and provide a clickable link.
 
-当任务涉及代码、数据、仿真、统计、图表、单位、参考文献核验或复现时自动使用。先检查输入来源、变量维度、单位、随机性、环境和预期输出；再做最小可验证计算或分析。输出图表必须检查坐标、单位、图例、采样率、分辨率和不确定性。任何外部检索结果都与论文直接事实分开标注。
+## Shared quality gate
 
-## 5. 可编辑图设计
+- Important facts, values, equations, figures, and contributions have paper locations.
+- Paper facts, author interpretations, background knowledge, and learning inferences remain separate.
+- Correlation does not become causation; a teaching visual never masquerades as an experimental result.
+- Internet use, software control, file writes, and editable figures still follow the current request and available permissions.
 
-当架构、因果关系或流程很难用文字理解时自动使用。先说明图要回答的一个问题，再写绘图规格：画布比例、模块层级、节点文本、连线方向、颜色语义、图例和输出尺寸。优先使用可编辑原生形状、文本和连接器；不把参考截图直接粘成最终图。
-
-若用户指定或需要 Visio，并且运行环境确认 Visio 可用，输出 `.vsdx` 并在生成前检查：文字不重叠、箭头方向正确、同级模块对齐、色彩可打印、形状与连线可编辑。未安装 Visio 或无自动化权限时，生成 Mermaid、SVG 或布局规格，而不是中断阅读流程。
-
-## 6. 朗读式诊断
-
-当用户表达含糊、语音对话已启用或连续追问同一个概念时自动使用。每轮只问或解释一个最小概念单元：先用一句通俗表述和短类比，再明确类比在论文中的对应物，最后让用户用一句话复述或选出卡点。复述不稳时，换例子或退回一个前置概念；复述正确后立即回到原论文的位置。
-
-## 7. 动态机制演示
-
-当静态图无法说明状态变化、数据流、梯度回传、循环校正或模块间相互影响时，自动考虑生成一个自包含的 HTML/SVG 逐步动画。优先用一个最小但具体的玩具场景模拟实际观测、状态和校正，而不是把模块框之间的箭头做成动画；清楚标明教学模拟与论文实测结果的边界。动画中的每一因果步骤必须对应论文中的变量、观测、方程或算法操作；不能把“通过损失共同优化参数”画成未经论文说明的物理拉拽或直接因果。默认把公式放在动画外的配套讲解，不把公式铺进画面；图内只保留少量经过标注的教学数值（距离、偏移、误差等），且不得冒充论文测得的数值。遇到需要简化的机制，显示被保留的变量与被省略的条件。动画必须由用户控制开始、暂停和重播；第一帧本身可读，并为减少动态偏好提供静态步骤切换。每一帧只强调一个因果变化，搭配明确标签；颜色不能是唯一编码。用户要链接、保存或下载时，必须同时导出独立 HTML 到交付目录并提供可点击链接；不要只依赖聊天内嵌预览。没有浏览器预览能力时，仍交付可打开的 HTML 与静态文字步骤，不阻断讲解。
-
-## 共同质量门禁
-
-- 重要事实、数字、公式、图表和贡献有可回查的论文位置。
-- 清楚区分论文事实、作者解释、背景知识和学习推断。
-- 相关性不升级为因果；视觉示意图不冒充论文实验结果。
-- 用户不必点名模块；但涉及联网、操作软件、写入文件或生成可编辑图时，仍遵守当次请求和环境权限。
+<!-- 中文注释：本文件说明主体内置的阅读图谱、深度讲解、学术迁移、科研工作台、可编辑图、朗读式诊断和动态演示模块。动画必须对应论文操作；公式放在图外，图中仅允许标明为示例的少量数值，不能把联合优化画成物理拉拽。 -->

@@ -1,29 +1,17 @@
-# 模式路由
+# Mode Routing
 
-先确认可读材料：完整论文、摘要、某一页/图、用户的笔记或仅一个概念问题。材料不完整时，说明能做的范围，仍完成当前可做部分。
+Identify the readable material first: full paper, abstract, individual page/figure, user notes, or a single concept question. With incomplete material, state the boundary and complete the reliable portion.
 
-若用户仅上传论文，不把它误判成“只要一句话摘要”。先给中等深度的论文地图：问题、研究缺口、输入输出、核心设计、验证证据、价值和局限。要让读者在第一次回复后已经能复述本文在做什么；再让用户选择局部深入方向。
+When only a paper is uploaded, begin with a medium-depth map: problem, gap, inputs/outputs, central design, validation evidence, value, and limitation. The first response should let the reader restate what the paper does.
 
-## 定向
+## Routes
 
-适用于选题摸底和快速判断。用“研究对象 → 想解决的空缺 → 做法 → 主要发现 → 对谁有用”给出论文地图，并推荐一个最值得先读的部分。没有全文时，不假装已验证结果。
+- **Orientation:** research object → gap → approach → main finding → intended beneficiaries; recommend one next section. Without full text, do not claim verified results.
+- **Guided reading:** tell the research story—difficulty, response, validation, conclusion strength—one natural unit at a time. Use concept rescue for missing prerequisites, then return to the paper.
+- **Concept rescue:** identify whether the obstacle is terminology, intuition, formula, operation, or conclusion link. Give the smallest useful example and one short check-in question.
+- **Local breakdown:** for figures, cover question, comparison, axes/symbols, trend, supported and unsupported conclusion; for methods, cover inputs, processing, outputs, rationale, and assumptions.
+- **Evidence review and connection:** separate direct evidence, author interpretation, and viable alternatives. Explain each paper's question and evidence strength before comparing papers.
 
-## 陪读
+End a turn when the reader restates the point correctly or chooses to continue. Create saved learning artifacts only when requested.
 
-将论文重组为一个研究故事：已有困难、作者的办法、他们如何验证、结论是否站得住。每次只推进一个自然单元（一个问题、一个图、一个方法或一个结论）；用户说“继续”再推进。遇到术语或前置知识空缺，暂时切换到概念救援，随后回到原处。
-
-## 概念救援
-
-先确认用户卡在“词的意思、直觉、公式、操作步骤，还是它和结论的关系”。给最小解释和例子后，问一个只需一句话回答的问题；若用户仍卡住，换一个例子或退到更基础的概念，而不是重复定义。
-
-## 局部拆解
-
-图表按“问题、比较对象、坐标/符号、趋势、能说明什么、不能说明什么”解释。方法按“输入、处理、输出、为什么能回答问题、关键前提”解释。公式先用变量的日常含义和变化方向建立直觉，除非用户请求推导，不展开完整数学推导。
-
-## 证据审视与连接
-
-对每个重要结论指出直接证据、作者解释以及仍不能排除的替代解释。比较多篇论文时，先分别说明每篇的研究问题和证据强度，再比较；不能把不同研究条件下的结果简单相加。
-
-## 何时结束或切换
-
-当前问题被用户用自己的话复述正确、或用户选择继续时结束本轮。若用户想要可保存的学习材料，才将已确认的内容整理为学习卡、阅读笔记或问题清单；不自动扩展为完整精读报告。
+<!-- 中文注释：先判断材料是否完整，再选择定向、陪读、概念救援、局部拆解或证据审视。用户只上传论文时，先给中等深度的论文地图；每轮只推进一个自然单元，确认理解后再继续。 -->

@@ -1,18 +1,16 @@
-# 证据与讲解边界
+# Evidence and Explanation Boundaries
 
-## 四类信息
+## Information classes
 
-- **[论文事实]**：论文直接报告的实验、数据、表格或文字结论。
-- **[作者解释]**：作者对数据的原因、机制或意义的解释。
-- **[背景知识]**：用来帮助理解的通识或外部资料，不是本文证据。
-- **[学习推断]**：为了连接概念而作的合理推断，必须说明它尚未被本文直接验证。
+- **Paper fact**: an experiment, dataset, table, observation, or result directly reported by the paper.
+- **Author interpretation**: the authors' explanation of a cause, mechanism, or implication.
+- **Background knowledge**: outside material used for teaching, not evidence from this paper.
+- **Learning inference**: a reasonable learning connection that the paper has not directly verified.
 
-核心结论至少标出页码、章节、图或表之一。图像模糊、补充材料缺失或论文未报告的信息，应直接说明，不能根据曲线形状补出精确数值，也不能把相关性写成因果。
+Locate important conclusions by page, section, figure, or table. If a figure is blurry, supplementary material is missing, or a fact is unreported, say so. Do not infer precise values from a curve or turn correlation into causation.
 
-## 类比的使用
+## Analogies and visuals
 
-类比只能映射当前要讲的一个关系。例如把训练集比作“练习题”可以解释模型学习，但不能据此推出模型的临床有效性。类比之后总要补一句“在本文里，它对应的是……”。
+Use an analogy for one relationship only, then state exactly what it maps to and where it stops. Prefer the paper's own figures for paper claims. External images are teaching aids: identify their source and purpose, and keep them out of the paper's evidence chain. Use a self-made text diagram or description if source, licensing, or resolution is unsuitable.
 
-## 视觉材料
-
-论文原图优先，因为它能支撑该论文的结论。外部图片只承担教学作用；说明其来源和用途，不混入论文证据链。若图片版权、清晰度或可信来源不合适，改用自制文本示意或描述。
+<!-- 中文注释：信息必须分为论文事实、作者解释、背景知识和学习推断。重要结论要标注页码、章节、图或表；不能从模糊图估数值，也不能把相关性说成因果。类比和外部图片只能辅助理解，不能替代本文证据。 -->

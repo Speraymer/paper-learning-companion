@@ -1,67 +1,33 @@
-# 严谨执行协议
+# Rigor Protocol
 
-在需要较长输出、生成文件、解释方法、审视证据、绘图或复现时读取本文件。它规定全局判断标准，不替代用户的当前目标。
+Use this protocol for long explanations, generated artifacts, method analysis, evidence review, figures, or reproduction work. It sets decision standards; it does not override the user's current goal.
 
-## A. 模式与停点
+## Modes
 
-| 模式 | 触发 | 最低完成标准 | 不应做什么 |
-| --- | --- | --- | --- |
-| 速览 | 用户要选题判断、相关度或快速概览 | 问题、缺口、方法、一个关键结果、限制、建议读哪部分 | 不把扫描当成完整精读 |
-| 完整精读 | 用户说精读、读懂、方法图、完整笔记或未限定的“读这篇” | 完成问题—方法—证据—结论的阅读图谱 | 未读方法和实验就下完整结论 |
-| 审稿核验 | 用户问创新是否成立、可靠吗、哪里有漏洞 | Claim—Evidence 矩阵、替代解释、具体补证据建议 | 用泛泛的“样本量小/多做实验”代替分析 |
-| 研究迁移 | 用户要复现、比较、综述、写作、选题或实验设计 | 说明可迁移的假设、方法、证据和不适用条件 | 把“可借鉴”说成“可直接复制” |
+| Mode | Minimum completion | Do not |
+| --- | --- | --- |
+| Scan | Problem, gap, method, one result, limitation, next section | Present a scan as deep reading |
+| Full reading | Map of problem, method, evidence, and conclusion | Conclude before reading methods and experiments |
+| Review | Claim–evidence matrix, alternatives, concrete evidence request | Substitute generic criticism for analysis |
+| Research transfer | Transferable assumptions, methods, evidence, and non-transfer conditions | Call an idea directly reusable without qualification |
 
-如果输入只是摘要、低清截图或不完整 PDF，仍完成能可靠完成的模式部分，但在结论开头说清边界。
+With an abstract, low-resolution image, or incomplete PDF, complete only the supportable portion and state the limitation first.
 
-## B. 论文类型路由
+## Paper-type routing
 
-- **系统/工程/机器人论文**：输入、传感器/数据、状态表示、模块接口、优化或控制回路、延迟与资源消耗、失败模式。
-- **机器学习/数据驱动论文**：任务定义、数据划分、预处理、训练/验证/测试隔离、基线、指标、消融、泄漏与泛化边界。
-- **理论论文**：定义、假设、命题/定理、证明策略、适用条件、反例或边界；不把直觉解释当成证明。
-- **实验科学论文**：材料/样本、变量、对照、测量方法、统计、重复、误差、从现象到机制的证据链。
-- **临床/观察研究**：人群、纳排标准、暴露/干预、结局、混杂、效应量和置信区间；相关性不升级为因果。
-- **综述/Meta 分析**：问题范围、检索和纳入逻辑、证据类型、异质性、作者观点与领域共识的区别；不套自变量—因变量模板。
+- **Systems/engineering/robotics:** inputs, sensors/data, state representation, interfaces, optimization/control loop, latency, resources, failure modes.
+- **Machine learning:** task, data splits, preprocessing, train/validation/test isolation, baselines, metrics, ablations, leakage, generalization boundary.
+- **Theory:** definitions, assumptions, propositions/theorems, proof strategy, conditions, counterexamples; intuition is not proof.
+- **Experimental science:** sample, variables, controls, measurement, statistics, repetitions, error, and the evidence chain.
+- **Clinical/observational studies:** population, eligibility, exposure/intervention, outcome, confounding, effect size, confidence interval; correlation is not causation.
+- **Reviews/meta-analyses:** scope, search and inclusion logic, evidence type, heterogeneity, author position, and field consensus.
 
-先判型，再选择读法。遇到混合型论文，分别说明每个证据分支对应的规则。
+Maintain a minimal evidence ledger for each important item: claim, direct evidence, source location, support strength, and what it does not establish. Never estimate exact values from low-resolution curves, treat a proxy as a direct measure, present simulation as experimental validation, equate statistical significance with practical importance, or call missing evidence evidence of absence.
 
-## C. 证据账本
+## Methods, artifacts, and learning loop
 
-对重要内容维护最小账本，至少包含：`问题/Claim`、`直接证据`、`来源定位`、`支持强度`、`不能推出什么`。
+Explain methods in the paper's order: goal, objects/assumptions, mechanism, connections, inputs/outputs, training/inference, cost, and applicability. Keep only essential equations, explaining variables, units/conditions, objectives, weights, and constraints. For a figure, state its question before panels, axes, units, controls, trends, errors, and sample size; then separate what it supports from what it cannot support.
 
-- **论文事实**：正文直接报告的数据、流程、观察、表格或图；可准确转述并给定位。
-- **作者解释**：作者给出的机制、因果或意义；即使措辞确定，也不自动升级为已证实事实。
-- **背景知识**：为教学而引入的通识或外部信息；说明它不是本文实验。
-- **学习推断**：为连接概念所作的推理；说明依据和未验证部分。
+For generated HTML/PDF, ensure readable layout, source locations, distinction between source/redrawn material, and successful rendering. For editable figures, use editable text, shapes, and connectors and check direction, overlap, alignment, print legibility, and opening. For scientific computing, inspect sources/units, run a minimum verification, and protect source data. End with architecture, principle, and evidence options.
 
-不得从低清曲线估出精确数值；不得把 proxy 当成直接量；不得把模拟当成实验验证；不得把统计显著当成实际重要；不得把未发现证据写成证据不存在。
-
-## D. 方法、公式与图表
-
-### 方法
-
-按论文自己的论证顺序，依次解释：本节目标、引入对象或假设、机制/算法、与前后步骤的连接、输入输出、训练或推理、代价和适用条件。模块名不是解释；必须说明它解决哪一项前述困难。
-
-### 公式
-
-保留决定理解的公式，不为展示数学量而堆公式。每个公式解释：符号来源、变量形状或单位、目标项和权重、分母/掩码/约束的作用、它改变哪个模块的行为。推导只能在论文给出或用户要求时展开；缺少条件时不补推导。
-
-### 图表
-
-先说图回答哪个问题，再解释面板、坐标、单位、分组、对照、趋势、误差和样本量。然后分别写“图直接支持什么”“图不能支持什么”。一张图只承担一个明确问题；视觉示意、重绘图和原图必须清楚标识。
-
-## E. 实验与创新审视
-
-每个主实验至少交代：实验问题、设定、数据/样本、基线或对照、指标、结果、作者结论及其边界。端到端比较只能说明系统效果；只有控制变量的消融或直接测量才可隔离某个机制。
-
-创新分为：作者自称创新、从本文可确认的新组合或新证据、需要外部检索才可核验的“首次”主张。后者没有检索时必须保留为作者声称。
-
-## F. 生成文件、图和计算
-
-- 阅读 HTML/PDF：首屏给出论文特有的问题、机制和证据定位；重要内容离线可读；数学、图表、原始图和重绘图可区分；交付前渲染检查溢出、断图和不可读表格。
-- 可编辑图：先固定画布、层级、节点、箭头、颜色语义和图例；使用可编辑文本、形状和连接器；检查连接方向、重叠、对齐、打印可辨性及文件可打开性。
-- 科学计算：读取输入和单位，记录随机种子/环境与预期输出；先做最小可验证运行；检查图轴、单位、图例、采样率和不确定性；不覆盖原始数据。
-- 外部检索：只在当前问题需要时使用，优先原始/官方来源；检索结果与论文事实分开呈现，并注明它服务的判断。
-
-## G. 学习闭环
-
-每轮讲解结束时给出与当前论文对应的三种下一步：架构层、原理层、证据层。每项写明用户会掌握什么。若用户连续卡住，缩小为一个概念单元，用新的例子验证理解后回到原文；不要只重复原定义或无休止追问。
+<!-- 中文注释：本协议规定不同阅读模式的最低完成标准，并按论文类型选择证据规则。重要内容要维护“主张—直接证据—来源—支持强度—不能推出什么”的账本；方法、公式、图表、实验和生成文件都必须可核查。 -->
