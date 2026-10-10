@@ -28,8 +28,8 @@ Maintain a minimal evidence ledger for each important item: claim, direct eviden
 
 ## Methods, artifacts, and learning loop
 
-Explain methods in the paper's order: goal, objects/assumptions, mechanism, connections, inputs/outputs, training/inference, cost, and applicability. Keep only essential equations, explaining variables, units/conditions, objectives, weights, and constraints. For a figure, state its question before panels, axes, units, controls, trends, errors, and sample size; then separate what it supports from what it cannot support.
+Explain methods in the paper's order: goal, objects/assumptions, mechanism, connections, inputs/outputs, training/inference, cost, and applicability. Keep only essential equations, explaining variables, units/conditions, objectives, weights, and constraints. For a figure, state its question before panels, axes, units, controls, trends, errors, and sample size; then separate what it supports from what it cannot support. For a local request, inspect the figure or formula, caption, and directly relevant method text first; broaden source inspection only when a required definition, assumption, or evidence link is absent. Do not broaden the user-facing explanation merely because more source context was read.
 
 For generated HTML/PDF, ensure readable layout, source locations, distinction between source/redrawn material, and successful rendering. For editable figures, use editable text, shapes, and connectors and check direction, overlap, alignment, print legibility, and opening. For scientific computing, inspect sources/units, run a minimum verification, and protect source data. End with architecture, principle, and evidence options.
 
-<!-- 中文注释：本协议规定不同阅读模式的最低完成标准。深度模式要求完整追踪输入、表示、操作、输出、目标或公式与证据，并说明假设、变量单位或形状、训练或推理、消融、指标和失效条件；它不默认进入代码导读。重要内容要维护“主张—直接证据—来源—支持强度—不能推出什么”的账本。 -->
+<!-- 中文注释：本协议规定不同阅读模式的最低完成标准。深度模式要求完整追踪输入、表示、操作、输出、目标或公式与证据，并说明假设、变量单位或形状、训练或推理、消融、指标和失效条件；它不默认进入代码导读。局部问题先检查目标、图注和相关方法段，再按缺失定义、假设或证据关系扩大原文阅读；内部阅读范围不自动扩大用户看到的讲解范围。 -->

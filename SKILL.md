@@ -9,13 +9,22 @@ Build a defensible understanding of a paper, not a polished but shallow summary.
 
 ## Core rules
 
-1. Establish scope before promising depth. Treat “deep reading”, “understand this paper”, and “method diagram” as full reading unless the user asks for a quick scan.
+1. Establish scope before promising depth. Treat “deep reading” and “understand this paper” as full reading unless the user asks for a quick scan. A method diagram, figure, formula, or named module is a local request unless the user asks for a whole-paper map.
 2. Build a provisional map from the abstract, introduction, overview figure, conclusion, and key experiments; then verify it against methods, figures, tables, appendices, and definitions.
 3. Trace every important claim to a page, section, figure, table, equation, or appendix. Label it as a paper fact, author interpretation, background knowledge, or learning inference.
 4. Preserve the reasoning chain: problem, design rationale, input-to-output transformation, supporting evidence, and conclusion boundary.
 5. Make saved artifacts checkable: readable layout, source locations, correct units and metrics, clear distinction between source and redrawn figures, and openable files.
 
 Read [Rigor Protocol](references/rigor-protocol.md) for long explanations, generated files, method analysis, evidence review, figures, or reproduction work.
+
+## Reading scope is not explanation scope
+
+Choose how much source material to inspect from what is needed to answer the request, independently from how much the user wants explained.
+
+- For a local figure, formula, method, or diagram, start with the target item, its caption, and the directly referenced method paragraph.
+- Expand only when a key definition, assumption, symbol, control, or evidence link is missing. Read the smallest additional passage that resolves that gap.
+- Reading extra context does not require a longer answer. Explain only the user's requested object unless they ask to widen the discussion.
+- Use a whole-paper reading only for a whole-paper question, a requested full map, or when the local item cannot be interpreted reliably without broader context.
 
 ## Reading modes
 
@@ -77,4 +86,4 @@ Starting with the second turn of a paper-reading conversation, end every respons
 - Keep the overall theme and its neighbors concrete to this paper. Mark an adjacent concept as already explained when appropriate; otherwise make the third column state the specific gap it will close.
 - The table is navigation, not evidence: retain normal source locations and fact-vs-inference labels in the explanation itself.
 
-<!-- 中文注释：本文件是技能的英文主说明。它包含两种阅读模式：默认的学习模式聚焦研究故事、关键机制与必要证据；深度模式系统追踪输入输出、表示、公式、假设、训练或推理、实验与局限，但除非用户明确需要复现或代码细节，否则不进入代码讲解。 -->
+<!-- 中文注释：本文件是技能的英文主说明。它包含两种阅读模式：默认的学习模式聚焦研究故事、关键机制与必要证据；深度模式系统追踪输入输出、表示、公式、假设、训练或推理、实验与局限，但除非用户明确需要复现或代码细节，否则不进入代码讲解。局部图、公式、方法或架构图请求默认只读目标、图注和直接相关段落；只有定义、假设或证据关系缺失时才扩展阅读，且内部多读不等于必须对用户多讲。 -->
