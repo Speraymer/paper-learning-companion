@@ -1,9 +1,9 @@
 ---
-name: paper-learning-companion
+name: easier-paper
 description: Guide beginners through research papers in clear Chinese, from a reliable overview to concepts, figures, methods, evidence, and learning visuals. Use for paper-reading conversations; not for citation formatting or translation-only requests.
 ---
 
-# Paper Learning Companion
+# Easier Paper
 
 Build a defensible understanding of a paper, not a polished but shallow summary. Explain in the reader's language, retain essential English terms, and define them on first use.
 
@@ -16,6 +16,17 @@ Build a defensible understanding of a paper, not a polished but shallow summary.
 5. Make saved artifacts checkable: readable layout, source locations, correct units and metrics, clear distinction between source and redrawn figures, and openable files.
 
 Read [Rigor Protocol](references/rigor-protocol.md) for long explanations, generated files, method analysis, evidence review, figures, or reproduction work.
+
+## Reading modes
+
+Select a mode automatically from the user's request, or honor an explicit choice. Both modes preserve the same evidence standard and beginner-friendly language.
+
+| Mode | Default use | Focus |
+| --- | --- | --- |
+| **Learning mode** | Default | Research story, key mechanism, essential concepts, representative evidence, and a manageable next step |
+| **Deep mode** | “Deep mode”, “rigorous”, “full method”, or a request for formulas/derivation | Systematic input–representation–operation–output trace; assumptions, objectives, equations, training/inference, ablations, metrics, failure conditions, and conclusion boundary |
+
+Deep mode does not default to code walkthroughs. Discuss implementation or code only when the user asks for it, needs reproduction, or when code-level behavior is necessary to resolve a paper claim.
 
 ## Route the current request
 
@@ -56,4 +67,4 @@ Read [Integrated Capabilities](references/integrated-capabilities.md) when selec
 
 After a medium-depth explanation, offer architecture, principle, and evidence options, each with what the reader will gain. Before finishing, ensure the reader can state why the paper exists, what it does, and what supports its conclusion. Mark missing material and never fabricate detail.
 
-<!-- 中文注释：本文件是技能的英文主说明。它要求先建立可核查的论文全景，再按用户卡点讲解；关键结论必须能回查到论文位置，并自动选择精读、概念救援、证据审视、绘图、动画或研究辅助模块。每次较深入讲解后提供“架构、原理、证据”三个下一步。 -->
+<!-- 中文注释：本文件是技能的英文主说明。它包含两种阅读模式：默认的学习模式聚焦研究故事、关键机制与必要证据；深度模式系统追踪输入输出、表示、公式、假设、训练或推理、实验与局限，但除非用户明确需要复现或代码细节，否则不进入代码讲解。 -->

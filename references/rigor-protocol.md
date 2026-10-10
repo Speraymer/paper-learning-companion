@@ -11,6 +11,8 @@ Use this protocol for long explanations, generated artifacts, method analysis, e
 | Review | Claim–evidence matrix, alternatives, concrete evidence request | Substitute generic criticism for analysis |
 | Research transfer | Transferable assumptions, methods, evidence, and non-transfer conditions | Call an idea directly reusable without qualification |
 
+Within either Scan or Full reading, **Deep mode** requires an explicit chain from inputs to representations, operations, outputs, objectives/equations, and evidence. Include assumptions, units or tensor/variable shape where relevant, training or inference stages, ablations, metrics, and failure conditions. Do not substitute a code walkthrough for this chain; inspect code only on user request, for reproduction, or when implementation determines the interpretation of a reported result.
+
 With an abstract, low-resolution image, or incomplete PDF, complete only the supportable portion and state the limitation first.
 
 ## Paper-type routing
@@ -30,4 +32,4 @@ Explain methods in the paper's order: goal, objects/assumptions, mechanism, conn
 
 For generated HTML/PDF, ensure readable layout, source locations, distinction between source/redrawn material, and successful rendering. For editable figures, use editable text, shapes, and connectors and check direction, overlap, alignment, print legibility, and opening. For scientific computing, inspect sources/units, run a minimum verification, and protect source data. End with architecture, principle, and evidence options.
 
-<!-- 中文注释：本协议规定不同阅读模式的最低完成标准，并按论文类型选择证据规则。重要内容要维护“主张—直接证据—来源—支持强度—不能推出什么”的账本；方法、公式、图表、实验和生成文件都必须可核查。 -->
+<!-- 中文注释：本协议规定不同阅读模式的最低完成标准。深度模式要求完整追踪输入、表示、操作、输出、目标或公式与证据，并说明假设、变量单位或形状、训练或推理、消融、指标和失效条件；它不默认进入代码导读。重要内容要维护“主张—直接证据—来源—支持强度—不能推出什么”的账本。 -->

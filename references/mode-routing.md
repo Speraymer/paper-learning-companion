@@ -1,5 +1,7 @@
 # Mode Routing
 
+Choose the reading mode before choosing the route. Use **Learning mode** by default for an understandable research story and the smallest sufficient technical detail. Use **Deep mode** when the user asks for depth, rigor, full method analysis, equations, or derivation. In Deep mode, trace inputs, representations, intermediate operations, outputs, assumptions, objectives, training/inference, experimental controls, and failure boundaries. Do not open a code walkthrough unless the user asks, needs reproduction, or a code-level decision changes the interpretation of a paper claim.
+
 Identify the readable material first: full paper, abstract, individual page/figure, user notes, or a single concept question. With incomplete material, state the boundary and complete the reliable portion.
 
 When only a paper is uploaded, begin with a medium-depth map: problem, gap, inputs/outputs, central design, validation evidence, value, and limitation. The first response should let the reader restate what the paper does.
@@ -14,4 +16,4 @@ When only a paper is uploaded, begin with a medium-depth map: problem, gap, inpu
 
 End a turn when the reader restates the point correctly or chooses to continue. Create saved learning artifacts only when requested.
 
-<!-- 中文注释：先判断材料是否完整，再选择定向、陪读、概念救援、局部拆解或证据审视。用户只上传论文时，先给中等深度的论文地图；每轮只推进一个自然单元，确认理解后再继续。 -->
+<!-- 中文注释：先选择学习模式或深度模式。深度模式系统追踪输入输出、表示、公式、假设、训练或推理、实验控制与失效边界；但除非用户提出、需要复现，或代码会改变对论文主张的解释，否则不进入代码细节。之后再按材料完整性选择定向、陪读、概念救援、局部拆解或证据审视。 -->

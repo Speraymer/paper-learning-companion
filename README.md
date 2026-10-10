@@ -1,6 +1,6 @@
-# Paper Learning Companion
+# Easier Paper
 
-A Codex skill for readers who need a reliable, beginner-friendly path through research papers. It starts with a paper-specific map, then deepens only where the reader needs it while separating paper evidence from teaching context and inference.
+A Codex skill for readers who need a reliable, beginner-friendly path through research papers. It provides a Learning mode for understanding-first reading and a Deep mode for rigorous method and evidence tracing.
 
 ## Capabilities
 
@@ -9,13 +9,14 @@ A Codex skill for readers who need a reliable, beginner-friendly path through re
 - Reviews experimental evidence and the boundary of claimed conclusions.
 - Produces learning notes, concept diagrams, editable figure specifications, and dynamic mechanism demonstrations when they materially improve understanding.
 - Uses concrete toy scenes for animations; equations stay in the accompanying explanation, while the scene shows only a few clearly marked teaching values.
+- Offers Deep mode for inputs, outputs, representations, equations, assumptions, training/inference, and experimental evidence without defaulting to code walkthroughs.
 
 ## Installation
 
 Clone the repository into the Codex skills directory:
 
 ```powershell
-git clone https://github.com/Speraymer/paper-learning-companion "$env:USERPROFILE\.codex\skills\paper-learning-companion"
+git clone https://github.com/Speraymer/easier-paper "$env:USERPROFILE\.codex\skills\easier-paper"
 ```
 
 Restart or refresh Codex, upload a paper, and ask to read it together.
@@ -28,4 +29,4 @@ This skill does not replace source verification. Important conclusions should tr
 
 [MIT](LICENSE)
 
-<!-- 中文注释：这是一个面向论文阅读的 Codex 技能。它先建立研究问题、方法和证据的全局地图，再按读者需要解释概念、公式、图表与实验；可按需生成笔记、图和动画，但关键结论仍需回查论文原文。 -->
+<!-- 中文注释：Easier Paper 是一个面向论文阅读的 Codex 技能。学习模式先建立研究问题、方法和证据的全局地图；深度模式系统解释输入输出、表示、公式、假设、训练或推理与实验证据，但默认不陷入代码细节。关键结论仍需回查论文原文。 -->

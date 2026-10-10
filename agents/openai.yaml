@@ -1,4 +1,4 @@
 interface:
-  display_name: "Paper Learning Companion"
-  short_description: "Beginner-friendly, evidence-grounded paper reading"
-  default_prompt: "Guide me through this paper in clear Chinese. First decide where I should start."
+  display_name: "Easier Paper"
+  short_description: "Learning and deep modes for evidence-grounded paper reading"
+  default_prompt: "Guide me through this paper in clear Chinese. Start in Learning mode unless I ask for Deep mode."
