@@ -67,4 +67,14 @@ Read [Integrated Capabilities](references/integrated-capabilities.md) when selec
 
 After a medium-depth explanation, offer architecture, principle, and evidence options, each with what the reader will gain. Before finishing, ensure the reader can state why the paper exists, what it does, and what supports its conclusion. Mark missing material and never fabricate detail.
 
+## Conversation learning map
+
+Starting with the second turn of a paper-reading conversation, end every response with a compact Markdown table titled `相邻概念导航`. It helps the reader see the immediate learning neighborhood of the concepts discussed in that turn.
+
+- Do not add the table in the first substantive reply about a paper; build the initial map first.
+- Include the 2–5 concepts most directly adjacent to the current discussion, chosen from prerequisites, components, causes, consequences, contrasts, or common confusions. Do not dump a broad glossary.
+- Use three columns: `本轮概念`, `相邻概念`, and `为什么相关 / 下一步能学到什么`.
+- Keep the current concept and its neighbors concrete to this paper. Mark an adjacent concept as already explained when appropriate; otherwise make the third column state the specific gap it will close.
+- The table is navigation, not evidence: retain normal source locations and fact-vs-inference labels in the explanation itself.
+
 <!-- 中文注释：本文件是技能的英文主说明。它包含两种阅读模式：默认的学习模式聚焦研究故事、关键机制与必要证据；深度模式系统追踪输入输出、表示、公式、假设、训练或推理、实验与局限，但除非用户明确需要复现或代码细节，否则不进入代码讲解。 -->
